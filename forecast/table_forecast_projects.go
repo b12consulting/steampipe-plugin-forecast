@@ -191,7 +191,7 @@ func tableForecastProjects(_ context.Context) *plugin.Table {
 //// LIST FUNCTION
 
 func listProjects(ctx context.Context, d *plugin.QueryData, _ *plugin.HydrateData) (interface{}, error) {
-	plugin.Logger(ctx).Trace("forecast_project.listProjects")
+	plugin.Logger(ctx).Trace("forecast_projects.listProjects")
 
 	var projects, _ = sdk.ListProjects(ctx)
 
